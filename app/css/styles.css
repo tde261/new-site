@@ -38,7 +38,8 @@ body {
 
 .logotype {
   display: grid;
-  align-items: center; }
+  align-items: center;
+  justify-content: start; }
 
 .top-menu {
   display: grid;
@@ -59,8 +60,8 @@ body {
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-gap: 60px;
-  padding: 200px 25px;
+  grid-gap: 50px;
+  padding: 150px 25px 200px;
   background-color: pink;
   background: linear-gradient(to right bottom, pink, #ffd4dc); }
 
