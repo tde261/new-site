@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$font-color: #333333;
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+a {
+    height: 100%;
+
+    &:active {
+        color: inherit;
+    }
+}
+
+body {
+    font-size: 16px;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: $font-color;
+}
+
+header {
+    
+    }
+
+.top-block {
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: minmax(80px, auto);
+    box-shadow: 0 0 8px #00000042,
+                0 0 3px #00000042;
+    position: relative;
+    z-index: 100;
+}
+
+.top-decorator {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(to right, orange, yellow, green, blue, purple,pink);
+    background-color: white;
+}
+
+.logotype {
+    display: grid;
+    align-items: center;
+}
+
+.top-menu {
+    display: grid;
+    justify-content: end;
+    grid-template-columns: repeat(3, minmax(50px, auto));
+    align-items: center;
+}
+
+.top-menu__item {
+        display: grid;
+        justify-content: end;
+        text-transform: uppercase;
+        font-weight: bold;
+
+    & a {
+        color: $font-color;
+        padding: 10px 20px;
+
+        &:hover {
+           
+        }
+    }
+}
+
+.first-screen {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 60px;
+    padding: 200px 25px;
+    background-color: pink;
+    background: linear-gradient(to right bottom, pink, #ffd4dc);
+}
+
+.main-text {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.search {
+    display: grid;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.search__title {
+    text-align: center;
+}
+
+.search__input-wrap {
+    display: grid;
+    grid-template-columns: 3fr 50px;
+    justify-content: stretch;
+    height: 50px;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2),
+                  0 0 1px rgba(0, 0, 0, 0.1);
+    transition: all 200ms ease;
+
+    &:hover {
+        box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2),
+                      0 0 1px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.search__text-field {
+    padding: 10px 20px;
+    font-size: 20px;
+    
+    &::placeholder {
+        color: #c7c7c7;
+    }
+}
+
+.search__button {
+    background-color: white;
+
+    & span {
+        cursor: pointer;
+        display: grid;
+        justify-content: center;
+    }
+
+    & svg {
+        fill: currentColor;
+        height: 35px;
+    }
+}
